@@ -58,4 +58,6 @@ data_string = data_string.strip('{}\n\r').replace("  ", "").split(',')
 data = list(map(float, data_string))        # transform data into float
 
 plt.plot(data)
-plt.show()
+plt.title("Red Pitaya Acquisition")
+plt.savefig("plot.png")
+print("Saved plot.png")
