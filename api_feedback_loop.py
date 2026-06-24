@@ -3,6 +3,7 @@
 import time
 import numpy as np
 import rp
+import sys
 import matplotlib.pyplot as plt
 
 
@@ -16,7 +17,7 @@ waveform = rp.RP_WAVEFORM_SINE
 freq = 100000
 ampl = 1.0
 
-ncyc = 3
+ncyc = 10
 nor = 1
 period = 10
 
@@ -44,7 +45,8 @@ acq_trig_sour = rp.RP_TRIG_SRC_AWG_PE
 
 N = 16384
 
-
+# Set threshold to infinity to disable truncation
+np.set_printoptions(threshold=np.inf)
 
 # Initialize the interface
 rp.rp_Init()
@@ -54,7 +56,7 @@ rp.rp_GenReset()
 rp.rp_AcqReset()
 
 ###### Generation #####
-print("Gen_start")
+print("Gen_start", file=sys.stderr)
 rp.rp_GenWaveform(channel, waveform)
 rp.rp_GenFreqDirect(channel, freq)
 rp.rp_GenAmp(channel, ampl)
@@ -87,7 +89,7 @@ rp.rp_AcqSetTriggerDelay(trig_dly)
 
 
 # Start Acquisition
-print("Acq_start")
+print("Acq_start", file=sys.stderr)
 rp.rp_AcqStart()
 
 # Specify trigger - input 1 positive edge
@@ -96,7 +98,7 @@ rp.rp_AcqSetTriggerSrc(acq_trig_sour)
 
 rp.rp_GenTriggerOnly(channel)       # Trigger generator
 
-print(f"Trigger state: {rp.rp_AcqGetTriggerState()}")
+print(f"Trigger state: {rp.rp_AcqGetTriggerState()}", file=sys.stderr)
 
 # Trigger state
 while 1:
@@ -106,7 +108,7 @@ while 1:
 
 ## ! OS 2.00 or higher only ! ##
 # Fill state
-print(f"Fill state: {rp.rp_AcqGetBufferFillState()}")
+print(f"Fill state: {rp.rp_AcqGetBufferFillState()}", file=sys.stderr)
 
 ## ! OS 2.00 or higher only ! ##
 while 1:
@@ -123,12 +125,14 @@ data_V = np.zeros(N, dtype = float)
 
 for i in range(0, N, 1):
     data_V[i] = fbuff[i]
+    print(data_V[i])
 
-print(f"Data in Volts: {data_V}")
+
+print("Saved data", file=sys.stderr)
 plt.plot(data_V)
 plt.title("Red Pitaya Acquisition")
-plt.savefig("api_plot.png")
-print("Saved api_plot.png")
+plt.savefig("plot2.png")
+print("Saved plot2.png", file=sys.stderr)
 
 # Release resources
 rp.rp_Release()
