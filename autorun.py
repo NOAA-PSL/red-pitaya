@@ -1,3 +1,10 @@
+
+##########################################################################
+## Run local red pitaya API scripts without copying or ssh into machine ##
+## Takes file to be ran, optional -dest filename to save data to        ##
+## Saves all data to ./file/                                            ##
+##########################################################################
+
 import os
 import sys
 import argparse
