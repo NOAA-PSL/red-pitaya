@@ -3,25 +3,17 @@ CFLAGS += -I/opt/redpitaya/include
 LDFLAGS = -L/opt/redpitaya/lib
 LDLIBS = -static -lrp-hw-can -lrp -lrp-hw-calib -lrp-hw-profiles
 
-INCLUDE += -I/opt/redpitaya/include/api250-12
 LDLIBS += -lrp-gpio -lrp-i2c
 LDLIBS += -lrp-hw -lm -lstdc++ -lpthread -li2c -lsocketcan
 
 # List of programs to compile
-PRGS = digital_led_blink \
-		cpp_feedback_loop
+PRGS := $(basename $(wildcard *.cpp))
 
-OBJS := $(patsubst %,%.o,$(PRGS))
-SRC := $(patsubst %,%.cpp,$(PRGS))
 
 all: $(PRGS)
 
-$(PRGS): %: %.cpp
+%: %.cpp
 	$(CXX) $< $(CFLAGS) $(LDFLAGS) $(LDLIBS) -o $@
 
 clean:
-	$(RM) *.o
-	$(RM) $(OBJS)
-
-clean_all: clean
-	$(RM) $(PRGS)
+	$(RM) $(PRGS) *.o

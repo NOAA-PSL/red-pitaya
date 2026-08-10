@@ -1,0 +1,1 @@
+g++ acq.cpp -Wall -std=c++20  -I/opt/redpitaya/include -L/opt/redpitaya/lib -static -lrp-hw-can -lrp -lrp-hw-calib -lrp-hw-profiles -lrp-gpio -lrp-i2c -lrp-hw -lm -lstdc++ -lpthread -li2c -lsocketcan -o acq
