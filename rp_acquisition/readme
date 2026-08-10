@@ -1,3 +1,5 @@
 This folder has a cpp program to acquire LOW voltages on CH1. 
 
 You can use the functions in acq_library.h or acquire_voltages.cpp to acquire raw data using the red pitaya board in the terminal.
+
+Spectra.cpp is an unfinished attempt at manually performing an ftt on raw data. 
