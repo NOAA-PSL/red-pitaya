@@ -1,4 +1,4 @@
-/*tis is just a testof a manual fft*/
+/*this is just a test of a manual fft*/
     int ret = rp_AcqGetOldestDataV(
         RP_CH_1,
         &ctx.buff_size,
