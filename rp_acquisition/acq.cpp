@@ -1,4 +1,4 @@
-/* Red Pitaya C++ API example of Synced Generation and acquisition
+/* Red Pitaya C++ API example of acquisition
 on a specific channel */
 
 #include <stdio.h>
@@ -17,7 +17,7 @@ int main(int argc, char **argv){
 		return -1;
 	}
 
-    /* Reset Generation and Acquisition */
+    /* Reset Acquisition */
     rp_AcqReset();
 
     /* Acquisition */

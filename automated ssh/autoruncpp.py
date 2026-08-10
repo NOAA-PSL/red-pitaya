@@ -3,6 +3,10 @@
 ## Run local red pitaya API scripts without copying or ssh into machine ##
 ## Takes file to be ran, optional -dest filename to save data to        ##
 ## Saves all data to ./file/                                            ##
+## python ./autoruncpp.py [-h] [-dest] filepath                         ##
+##   ex. Python ./autoruncpp.py cpp_feedback_loop.cpp                   ##
+## This will create a file with a dated name in the data folder of the  ##
+## repo. Otherwise, input an optional file name.                        ##
 ##########################################################################
 
 import os
@@ -50,10 +54,10 @@ if args.dest is None:
     now = datetime.now()
     time = now.strftime("%Y-%m-%d_%H-%M-%S")
     destname = f"{process}{time}.txt"
-    destpath = f"./data/{destname}"
+    destpath = f"../data/{destname}"
     
 else:
-    destpath = f"./data/{args.dest}"
+    destpath = f"../data/{args.dest}"
     
 #copy cpp file and makefile over to red pitaya
 for file in [args.filepath, makefile]:

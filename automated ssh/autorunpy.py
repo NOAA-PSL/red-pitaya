@@ -3,6 +3,10 @@
 ## Run local red pitaya API scripts without copying or ssh into machine ##
 ## Takes file to be ran, optional -dest filename to save data to        ##
 ## Saves all data to ./file/                                            ##
+## python ./autorun.py [-h] [-dest] filepath                            ##
+##   ex. Python ./autorun.py api_feedback_loop.py                       ##
+## This will create a file with a dated name in the data folder of the  ##
+## repo. Otherwise, input an optional file name.                        ##
 ##########################################################################
 
 import os
@@ -32,10 +36,10 @@ if args.dest is None:
     now = datetime.now()
     time = now.strftime("%Y-%m-%d_%H-%M-%S")
     destname = f"{radar}{time}.txt"
-    destpath = f"./data/{destname}"
+    destpath = f"../data/{destname}"
     
 else:
-    destpath = f"./data/{args.dest}"
+    destpath = f"../data/{args.dest}"
     
 #connect to Red Pitaya and run script  
 command = [

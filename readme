@@ -1,0 +1,48 @@
+Github repository for Red Pitaya data aqcuisition for use as SDR.
+
+Link to Red Pitaya Getting Started: 
+https://docs.google.com/document/d/19OnYhg5kkh0p6dgTRoniobef44eeiYhupY4dir2BS4U/edit?pli=1&tab=t.0
+
+There are multiple ways to stream data on the red pitaya:
+
+-on red pitaya UI
+    type rp-xxxxxx.local into search bar. click on streaming application or any others necessary
+
+-over scpi server
+    create program using red pitaya's scpi library
+    start scpi server on UI or in terminal. Then run program
+
+-red pitaya api
+    copy programs written in red pitaya's api to red pitaya
+    ssh into the red pitaya and run programs directly on the machine
+
+-automation scripts for api programs
+    skip copying and sshing into the red pitaya with Edie's automation scripts for cpp and py
+
+-Pavel Denim's projects
+    needs exploration
+
+Contents of Repository:
+
+-rp_acquisition
+    programs to receive a signal using the red pitaya. 
+
+-data
+    raw data files captured my red pitaya
+
+-plots
+    plots created from raw data
+
+-plotter
+    programs to plot raw data files (depending on data format)
+
+-automated ssh
+    automated scripts to expedite copying and ssh
+
+-feedbackloop
+    programs for a simple hello world feedback loop. Check to make sure rp can generate and acquire data correctly
+
+-fpga
+
+
+**All cpp files can be compiled with the Makefile found within automated ssh**
