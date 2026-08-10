@@ -12,18 +12,19 @@ struct RPContext {
     std::vector<float> buffer;
 };
 
+// initializes rp for acquisition*
 int rp_set(RPContext &ctx);
 
+// acquires data and stores it in the rp buffer
 void rp_acq();
 
+// reads raw samples from buffer and prints them to stdout
 void print_voltages(RPContext &ctx);
 
-void apply_hanning_window(std::vector<float>& signal);
-
-
-
+// creates a filename and path to store the collected samples to
 std::string create_filename(std::string process);
 
+// releases the rp (must call this after acquisition)
 void rp_finish(RPContext &ctx);
 
 #endif
