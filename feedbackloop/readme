@@ -1,0 +1,4 @@
+cpp and py program to test rp data creation/collection capability. 
+
+Connect IN1 to OUT1 via wire.
+Rp will generate signal and receive same signal.
