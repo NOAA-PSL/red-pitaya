@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="70" Path="C:/red pitaya/red-pitaya/fpga/coherent_accumulator/coherent_accumulator.xpr">
+<Project Product="Vivado" Version="7" Minor="70" Path="C:/redpitaya/red-pitaya/fpga/coherent_accumulator/coherent_accumulator.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="715aff68eeff4d26bb571f8f2cd54284"/>
