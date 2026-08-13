@@ -1,4 +1,5 @@
 Github repository for Red Pitaya data aqcuisition for use as SDR.
+Edie Simecek
 
 Link to Red Pitaya Getting Started: 
 https://docs.google.com/document/d/19OnYhg5kkh0p6dgTRoniobef44eeiYhupY4dir2BS4U/edit?pli=1&tab=t.0
@@ -20,7 +21,7 @@ There are multiple ways to stream data on the red pitaya:
     skip copying and sshing into the red pitaya with Edie's automation scripts for cpp and py
 
 -Pavel Denim's projects
-    needs exploration
+    requires exploration
 
 Contents of Repository:
 
@@ -43,6 +44,7 @@ Contents of Repository:
     programs for a simple hello world feedback loop. Check to make sure rp can generate and acquire data correctly
 
 -fpga
+    coherent integration program for raw radio data acquisition and preliminary processing
 
 
 **All cpp files can be compiled with the Makefile found within automated ssh**
