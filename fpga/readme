@@ -1,1 +1,2 @@
-readme ehre
+This folder contains old bit files used to program the Red Pitaya FPGA with the preliminary LED Blink program.
+It also contains coherent_accumulator, a Verilog Project to be used to aqcuire data, perform coherent integration on the raw data, and store to BRAM.
