@@ -1,0 +1,17 @@
+# Vivado generated files
+coherent_accumulator.cache/
+coherent_accumulator.gen/
+coherent_accumulator.hw/
+coherent_accumulator.ip_user_files/
+coherent_accumulator.runs/
+coherent_accumulator.sim/
+
+# Vivado temporary files
+*.jou
+*.log
+*.str
+*.wdb
+*.wcfg
+
+# Vivado user data
+.Xil/

@@ -1,0 +1,153 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.615573",
+   "Default View_TopLeft":"877,276",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 8 -x 4130 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 4130 -y 50 -defaultsOSRD
+preplace port BRAM_PORTB_0 -pg 1 -lvl 0 -x -370 -y -320 -defaultsOSRD
+preplace port port-id_trig_in -pg 1 -lvl 0 -x -370 -y 530 -defaultsOSRD
+preplace port port-id_trig_out -pg 1 -lvl 8 -x 4130 -y 580 -defaultsOSRD
+preplace port port-id_gpio_trig -pg 1 -lvl 8 -x 4130 -y 530 -defaultsOSRD
+preplace port port-id_clksel -pg 1 -lvl 8 -x 4130 -y 500 -defaultsOSRD
+preplace port port-id_daisy_slave -pg 1 -lvl 0 -x -370 -y 500 -defaultsOSRD
+preplace port port-id_FCLK_CLK0 -pg 1 -lvl 8 -x 4130 -y 230 -defaultsOSRD
+preplace port port-id_FCLK_CLK1 -pg 1 -lvl 8 -x 4130 -y 260 -defaultsOSRD
+preplace port port-id_FCLK_CLK2 -pg 1 -lvl 8 -x 4130 -y 290 -defaultsOSRD
+preplace port port-id_FCLK_CLK3 -pg 1 -lvl 8 -x 4130 -y 320 -defaultsOSRD
+preplace port port-id_FCLK_RESET0_N -pg 1 -lvl 8 -x 4130 -y 350 -defaultsOSRD
+preplace port port-id_FCLK_RESET1_N -pg 1 -lvl 8 -x 4130 -y 380 -defaultsOSRD
+preplace port port-id_FCLK_RESET2_N -pg 1 -lvl 8 -x 4130 -y 410 -defaultsOSRD
+preplace port port-id_FCLK_RESET3_N -pg 1 -lvl 8 -x 4130 -y 440 -defaultsOSRD
+preplace port port-id_adc_clk -pg 1 -lvl 0 -x -370 -y 470 -defaultsOSRD
+preplace port port-id_clk_out -pg 1 -lvl 8 -x 4130 -y 470 -defaultsOSRD
+preplace portBus In10_0 -pg 1 -lvl 0 -x -370 -y 290 -defaultsOSRD
+preplace portBus In11_0 -pg 1 -lvl 0 -x -370 -y 320 -defaultsOSRD
+preplace portBus In12_0 -pg 1 -lvl 0 -x -370 -y 350 -defaultsOSRD
+preplace portBus In13_0 -pg 1 -lvl 0 -x -370 -y 380 -defaultsOSRD
+preplace portBus In1_0 -pg 1 -lvl 0 -x -370 -y 20 -defaultsOSRD
+preplace portBus In2_0 -pg 1 -lvl 0 -x -370 -y 50 -defaultsOSRD
+preplace portBus In3_0 -pg 1 -lvl 0 -x -370 -y 80 -defaultsOSRD
+preplace portBus In4_0 -pg 1 -lvl 0 -x -370 -y 110 -defaultsOSRD
+preplace portBus In5_0 -pg 1 -lvl 0 -x -370 -y 140 -defaultsOSRD
+preplace portBus In6_0 -pg 1 -lvl 0 -x -370 -y 170 -defaultsOSRD
+preplace portBus In7_0 -pg 1 -lvl 0 -x -370 -y 200 -defaultsOSRD
+preplace portBus In8_0 -pg 1 -lvl 0 -x -370 -y 230 -defaultsOSRD
+preplace portBus In9_0 -pg 1 -lvl 0 -x -370 -y 260 -defaultsOSRD
+preplace portBus gpio_n -pg 1 -lvl 8 -x 4130 -y 140 -defaultsOSRD
+preplace portBus gpio_p -pg 1 -lvl 8 -x 4130 -y 170 -defaultsOSRD
+preplace portBus loopback_sel -pg 1 -lvl 8 -x 4130 -y 200 -defaultsOSRD
+preplace portBus dac_dat_a -pg 1 -lvl 8 -x 4130 -y 80 -defaultsOSRD
+preplace portBus dac_dat_b -pg 1 -lvl 8 -x 4130 -y 110 -defaultsOSRD
+preplace portBus adc_data_ch1 -pg 1 -lvl 0 -x -370 -y 410 -defaultsOSRD
+preplace portBus adc_data_ch2 -pg 1 -lvl 0 -x -370 -y 440 -defaultsOSRD
+preplace portBus rstn_out -pg 1 -lvl 8 -x 4130 -y 610 -defaultsOSRD
+preplace inst processing_system7 -pg 1 -lvl 4 -x 1820 -y 630 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 5 -x 2460 -y 150 -defaultsOSRD
+preplace inst intr_concat -pg 1 -lvl 4 -x 1820 -y 210 -defaultsOSRD
+preplace inst rp_concat -pg 1 -lvl 4 -x 1820 -y 1000 -defaultsOSRD
+preplace inst rp_oscilloscope -pg 1 -lvl 3 -x 1030 -y 250 -defaultsOSRD
+preplace inst xadc -pg 1 -lvl 3 -x 1030 -y 690 -defaultsOSRD
+preplace inst axi_interconnect_2 -pg 1 -lvl 5 -x 2460 -y 430 -defaultsOSRD
+preplace inst axi_reg -pg 1 -lvl 5 -x 2460 -y 740 -defaultsOSRD
+preplace inst clk_gen -pg 1 -lvl 5 -x 2460 -y 1000 -defaultsOSRD
+preplace inst rp_dac -pg 1 -lvl 7 -x 3660 -y 300 -defaultsOSRD
+preplace inst rp_gpio -pg 1 -lvl 7 -x 3660 -y -120 -defaultsOSRD
+preplace inst rst_gen -pg 1 -lvl 6 -x 3040 -y 190 -defaultsOSRD
+preplace inst rst_gen2 -pg 1 -lvl 6 -x 3040 -y 390 -defaultsOSRD
+preplace inst rst_gen3 -pg 1 -lvl 5 -x 2460 -y 1460 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 5 -x 2460 -y 1250 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 5 -x 2460 -y 1640 -defaultsOSRD
+preplace inst proc_sys_reset_3 -pg 1 -lvl 5 -x 2460 -y 1820 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -x -40 -y -370 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 370 -y -260 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x -40 -y -190 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x -40 -y -90 -defaultsOSRD
+preplace netloc ARESETN_1 1 2 5 860 1180 NJ 1180 2260 1140 2730 510 3470
+preplace netloc In10_0_1 1 0 4 -330J -510 N -510 N -510 1450
+preplace netloc In11_0_1 1 0 4 -300J -480 N -480 N -480 1410
+preplace netloc In12_0_1 1 0 4 -270J -450 N -450 850 -190 1380
+preplace netloc In1_0_1 1 0 4 NJ 20 N 20 510 -30 1200
+preplace netloc In2_0_1 1 0 4 NJ 50 140 -50 N -50 1210
+preplace netloc In3_0_1 1 0 4 -320J -270 110 -140 N -140 1420
+preplace netloc In4_0_1 1 0 4 -290J -260 120 -190 500 -170 1430
+preplace netloc In5_0_1 1 0 4 -310J -280 110 -330 840 -180 1440
+preplace netloc In6_0_1 1 0 4 -280J -250 100 -160 N -160 1400
+preplace netloc In7_0_1 1 0 4 NJ 200 90 -80 N -80 1340
+preplace netloc In8_0_1 1 0 4 -340J -490 N -490 N -490 1470
+preplace netloc In9_0_1 1 0 4 -350J -520 N -520 N -520 1480
+preplace netloc M00_ARESETN_1 1 2 6 840 -90 1460J -80 2220 -80 NJ -80 3420 100 3920J
+preplace netloc Net 1 7 1 4020 -130n
+preplace netloc Net1 1 7 1 4010 -110n
+preplace netloc adc_clk_1 1 0 5 -260J -470 N -470 N -470 NJ -470 2170
+preplace netloc adc_data_ch1_0_1 1 0 3 -240 210 N 210 510
+preplace netloc adc_data_ch2_0_1 1 0 3 -230 230 140 220 790
+preplace netloc clk_gen_adc_clk 1 2 6 820 -110 1300 -40 2070 -20 2670 -20 3440 90 3940J
+preplace netloc clk_gen_clk_200 1 3 4 1580 1170 2270 1120 2720 500 3480
+preplace netloc clk_gen_clk_62_5 1 0 8 -180 -500 N -500 780 -120 1310 -70 2210 -70 NJ -70 3460 110 3950J
+preplace netloc clk_gen_locked 1 5 1 2710 230n
+preplace netloc dac_data_ch1_0_1 1 7 1 3980 80n
+preplace netloc dac_data_ch2_0_1 1 7 1 4000 110n
+preplace netloc loopback_sel_scope 1 3 5 1370 -330 NJ -330 NJ -330 NJ -330 4050J
+preplace netloc processing_system7_FCLK_RESET2_N 1 4 4 2240 -10 2700 490 NJ 490 4050J
+preplace netloc processing_system7_fclk_clk0 1 4 4 2250 -320 NJ -320 NJ -320 4030
+preplace netloc processing_system7_fclk_clk1 1 4 4 2200 -310 NJ -310 NJ -310 3990J
+preplace netloc processing_system7_fclk_clk3 1 4 4 2190 -450 NJ -450 NJ -450 4060
+preplace netloc processing_system7_fclk_reset0_n 1 4 4 2230 -400 NJ -400 NJ -400 4040
+preplace netloc processing_system7_fclk_reset1_n 1 4 4 2180 -480 NJ -480 NJ -480 4070
+preplace netloc processing_system7_fclk_reset3_n 1 4 4 2150 -490 NJ -490 NJ -490 4080
+preplace netloc rp_concat_0_event_reset 1 2 5 810 -130 NJ -130 2080 -40 NJ -40 3480
+preplace netloc rp_concat_0_event_start 1 2 5 870 -40 1220J -30 2090 -30 NJ -30 3410
+preplace netloc rp_concat_0_event_stop 1 2 5 860 -60 1220J -50 2100 -50 NJ -50 3400
+preplace netloc rp_concat_event_trig 1 2 5 800 -150 NJ -150 2050 -120 2700J -90 3450
+preplace netloc rp_concat_ext_trig_ip 1 0 4 -250 -460 N -460 860 -200 1320J
+preplace netloc rp_concat_trig 1 2 5 850 -70 1230J -60 2110 -60 NJ -60 3490
+preplace netloc rp_dac_dac1_event_op 1 3 5 1510 -440 NJ -440 NJ -440 NJ -440 3870
+preplace netloc rp_dac_dac1_trig_op 1 3 5 1520 -430 NJ -430 NJ -430 NJ -430 3890
+preplace netloc rp_dac_dac2_event_op 1 3 5 1530 -420 NJ -420 NJ -420 NJ -420 3910
+preplace netloc rp_dac_dac2_trig_op 1 3 5 1500 -390 NJ -390 NJ -390 NJ -390 3860
+preplace netloc rp_dac_intr 1 3 5 1550 -410 NJ -410 NJ -410 NJ -410 3900
+preplace netloc rp_gpio_event_op 1 3 5 1570 -360 NJ -360 NJ -360 NJ -360 3830
+preplace netloc rp_gpio_intr 1 3 5 1610 -510 NJ -510 NJ -510 NJ -510 3930
+preplace netloc rp_gpio_trig_o_trig 1 7 1 3930 -50n
+preplace netloc rp_gpio_trig_op 1 3 5 1610 1160 2280J 1130 NJ 1130 NJ 1130 3850
+preplace netloc rp_oscilloscope_0_clksel 1 3 5 1350 -340 NJ -340 NJ -340 NJ -340 3970J
+preplace netloc rp_oscilloscope_0_intr 1 3 1 1230 180n
+preplace netloc rp_oscilloscope_0_osc1_event_op 1 3 1 1220 240n
+preplace netloc rp_oscilloscope_0_osc1_trig_op 1 3 1 1210 260n
+preplace netloc rp_oscilloscope_0_osc2_event_op 1 3 1 1200 280n
+preplace netloc rp_oscilloscope_0_osc2_trig_op 1 3 1 1190 300n
+preplace netloc rp_oscilloscope_trig_out 1 3 5 1330 -350 NJ -350 NJ -350 NJ -350 3960J
+preplace netloc rst_gen2_peripheral_aresetn 1 6 1 3490 390n
+preplace netloc rst_gen3_peripheral_aresetn 1 0 6 -170 1190 NJ 1190 NJ 1190 NJ 1190 2290 1150 2630
+preplace netloc slave_mode_in 1 0 3 -220 390 N 390 790
+preplace netloc xadc_ip2intc_irpt 1 3 1 1390 60n
+preplace netloc xlconcat_0_dout 1 3 2 1590 -20 2030
+preplace netloc xlconstant_0_dout 1 1 2 90 -150 500J
+preplace netloc xlconstant_1_dout 1 1 2 NJ -90 490
+preplace netloc BRAM_PORTB_0_1 1 0 2 -290J -290 130J
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 140 -380n
+preplace netloc axi_interconnect_0_M00_AXI 1 3 3 1580 -110 NJ -110 2630
+preplace netloc axi_interconnect_2_M00_AXI 1 3 3 1600 -100 NJ -100 2640
+preplace netloc axi_reg_M00_AXI 1 2 4 830 -100 1490J -90 NJ -90 2650
+preplace netloc axi_reg_M01_AXI 1 5 2 2690J 290 3430
+preplace netloc axi_reg_M02_AXI 1 5 2 2680J -100 3210
+preplace netloc axi_reg_M03_AXI 1 0 6 -170 -530 NJ -530 NJ -530 NJ -530 NJ -530 2660
+preplace netloc p_gpio_axi_gpio_in 1 4 4 2290 -470 NJ -470 NJ -470 3850
+preplace netloc p_gpio_axi_gpio_out 1 4 4 2260 -500 NJ -500 NJ -500 3920
+preplace netloc processing_system7_DDR 1 4 4 2120 0 2690J 70 NJ 70 3980J
+preplace netloc processing_system7_FIXED_IO 1 4 4 2060 -460 NJ -460 NJ -460 4090J
+preplace netloc processing_system7_M_AXI_GP0 1 4 1 2120 580n
+preplace netloc rp_dac_m_axi_dac1 1 3 5 1540 -380 NJ -380 NJ -380 NJ -380 3840
+preplace netloc rp_dac_m_axi_dac2 1 3 5 1560 -370 NJ -370 NJ -370 NJ -370 3880
+preplace netloc rp_oscilloscope_m_axi_osc1 1 3 2 1190J 0 2040
+preplace netloc rp_oscilloscope_m_axi_osc2 1 3 2 1360J -10 2160
+levelinfo -pg 1 -370 -40 370 1030 1820 2460 3040 3660 4130
+pagesize -pg 1 -db -bbox -sgen -550 -660 4350 1960
+"
+}
+{
+   "da_axi4_cnt":"1"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "system_rp_concat_0",
+    "cell_name": "rp_concat",
+    "component_reference": "redpitaya.com:user:rp_concat:1.0",
+    "ip_revision": "3",
+    "gen_directory": "../../../../../../coherent_accumulator.gen/sources_1/bd/system/ip/system_rp_concat_0",
+    "parameters": {
+      "component_parameters": {
+        "EVENT_SRC_NUM": [ { "value": "5", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "TRIG_SRC_NUM": [ { "value": "6", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "system_rp_concat_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "EVENT_SRC_NUM": [ { "value": "5", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "TRIG_SRC_NUM": [ { "value": "6", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "3" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../coherent_accumulator.gen/sources_1/bd/system/ip/system_rp_concat_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "gen1_event_ip": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "gen1_trig_ip": [ { "direction": "in" } ],
+        "gen2_event_ip": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "gen2_trig_ip": [ { "direction": "in" } ],
+        "osc1_event_ip": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "osc1_trig_ip": [ { "direction": "in" } ],
+        "osc2_event_ip": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "osc2_trig_ip": [ { "direction": "in" } ],
+        "la_event_ip": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "la_trig_ip": [ { "direction": "in" } ],
+        "ext_trig_ip": [ { "direction": "in" } ],
+        "event_trig": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "event_stop": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "event_start": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "event_reset": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "trig": [ { "direction": "out", "size_left": "5", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "event_reset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "event_reset" } ]
+          }
+        }
+      }
+    }
+  }
+}
